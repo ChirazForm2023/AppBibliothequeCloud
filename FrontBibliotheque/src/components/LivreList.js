@@ -6,7 +6,7 @@ const LivreList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/books")
+      .get("http://51.44.62.128:3001/books")
       .then((response) => setLivres(response.data))
       .catch((error) => console.error("Error fetching livres:", error));
   }, []);

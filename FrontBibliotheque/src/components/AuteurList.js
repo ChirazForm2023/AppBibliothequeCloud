@@ -6,7 +6,7 @@ const AuteurList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/auteurs")
+      .get("http://51.44.62.128:3001/auteurs")
       .then((response) => setAuteurs(response.data))
       .catch((error) => console.error("Error fetching auteurs:", error));
   }, []);

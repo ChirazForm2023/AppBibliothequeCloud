@@ -8,7 +8,8 @@ const AuteurForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3001/authors", { nom })
+      .post("http://51.44.62.128:3001/authors", { nom })
+      //  .post("http://localhost:3001/authors", { nom })
       .then(() => {
         setNom("");
         setPrenom("");
